@@ -5,6 +5,7 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Data
@@ -12,6 +13,7 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "usr")
 public class User extends BaseEntity {
 
     @Column(length = 20, nullable = false, unique = true)
